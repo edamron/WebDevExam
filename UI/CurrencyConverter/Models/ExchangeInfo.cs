@@ -35,14 +35,15 @@ namespace CurrencyConverter.Models {
         }
 
         public WorldCurrencies(string SourceCurrency) : this() {
-            // adjust the exchange rates to be based on the selected source currency
+            //// adjust the exchange rates to be based on the selected source currency
             double newSourceRate = 1;
             TargetRates.TryGetValue(SourceCurrency, out newSourceRate);
 
             TargetRates.Clear();
 
             foreach (var countryExchangeInfo in Currencies) {
-                TargetRates.Add(countryExchangeInfo.Code, countryExchangeInfo.ExchangeRate / newSourceRate);
+                //TargetRates.Add(countryExchangeInfo.Code, countryExchangeInfo.ExchangeRate / newSourceRate);
+                countryExchangeInfo.ExchangeRate = countryExchangeInfo.ExchangeRate / newSourceRate;
             }
         }
     }
