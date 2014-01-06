@@ -1,0 +1,74 @@
+\hypertarget{class_currency_converter_1_1_models_1_1_world_currencies}{\section{Currency\-Converter.\-Models.\-World\-Currencies Class Reference}
+\label{class_currency_converter_1_1_models_1_1_world_currencies}\index{Currency\-Converter.\-Models.\-World\-Currencies@{Currency\-Converter.\-Models.\-World\-Currencies}}
+}
+
+
+An enumerable list of currencies info objects, along with a dictionary of rates that have been adjusted to work with the currency being converted from.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_currency_converter_1_1_models_1_1_world_currencies_ab9f3c86f05f1c21bec84ef65bf392257}{World\-Currencies} ()
+\begin{DoxyCompactList}\small\item\em Gets all the exchange rates available for the most recent date they were downloaded from the Currency\-Exchange A\-P\-I. A list of adjusted rates is also created, but in the case of using the U\-S Dollar as the base, but will match the rate from the A\-P\-I (since this constructor is not given an alternate base to work from). \end{DoxyCompactList}\item 
+\hyperlink{class_currency_converter_1_1_models_1_1_world_currencies_ae66d9aa96b18e7a0afbe10f178a5018d}{World\-Currencies} (string Source\-Currency)
+\begin{DoxyCompactList}\small\item\em Gets all the exchange rates available for the most recent date they were downloaded from the Currency\-Exchange A\-P\-I. A list of adjusted rates is also created vs. the U\-S Dollar (which is the only data available via openexchangerates.\-org) for convertions against a difference base. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\-Enumerable$<$ \hyperlink{class_currency_converter_1_1_models_1_1_country_exchange_info}{Country\-Exchange\-Info} $>$ \hyperlink{class_currency_converter_1_1_models_1_1_world_currencies_a09b0138ea930d4a5025a7537f786902e}{Currencies}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An enumerable list of all the currencies available to the application (which ultimately come from a S\-Q\-L Azure database table in earl.\-azurewebsites.\-net called Currency.\-dbo.\-tb\-Exchange\-Rates) \end{DoxyCompactList}\item 
+Dictionary$<$ string, double $>$ \hyperlink{class_currency_converter_1_1_models_1_1_world_currencies_ac31be6d2926cc18ee8eb3265ab1de0db}{Target\-Rates}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A list of exchange rates that have been converted from their base amount (vs. the U\-S Dollar) to the given base (if necessary). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An enumerable list of currencies info objects, along with a dictionary of rates that have been adjusted to work with the currency being converted from. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_currency_converter_1_1_models_1_1_world_currencies_ab9f3c86f05f1c21bec84ef65bf392257}{\index{Currency\-Converter\-::\-Models\-::\-World\-Currencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}!World\-Currencies@{World\-Currencies}}
+\index{World\-Currencies@{World\-Currencies}!CurrencyConverter::Models::WorldCurrencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}}
+\subsubsection[{World\-Currencies}]{\setlength{\rightskip}{0pt plus 5cm}Currency\-Converter.\-Models.\-World\-Currencies.\-World\-Currencies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_currency_converter_1_1_models_1_1_world_currencies_ab9f3c86f05f1c21bec84ef65bf392257}
+
+
+Gets all the exchange rates available for the most recent date they were downloaded from the Currency\-Exchange A\-P\-I. A list of adjusted rates is also created, but in the case of using the U\-S Dollar as the base, but will match the rate from the A\-P\-I (since this constructor is not given an alternate base to work from). 
+
+\hypertarget{class_currency_converter_1_1_models_1_1_world_currencies_ae66d9aa96b18e7a0afbe10f178a5018d}{\index{Currency\-Converter\-::\-Models\-::\-World\-Currencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}!World\-Currencies@{World\-Currencies}}
+\index{World\-Currencies@{World\-Currencies}!CurrencyConverter::Models::WorldCurrencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}}
+\subsubsection[{World\-Currencies}]{\setlength{\rightskip}{0pt plus 5cm}Currency\-Converter.\-Models.\-World\-Currencies.\-World\-Currencies (
+\begin{DoxyParamCaption}
+\item[{string}]{Source\-Currency}
+\end{DoxyParamCaption}
+)}}\label{class_currency_converter_1_1_models_1_1_world_currencies_ae66d9aa96b18e7a0afbe10f178a5018d}
+
+
+Gets all the exchange rates available for the most recent date they were downloaded from the Currency\-Exchange A\-P\-I. A list of adjusted rates is also created vs. the U\-S Dollar (which is the only data available via openexchangerates.\-org) for convertions against a difference base. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_currency_converter_1_1_models_1_1_world_currencies_a09b0138ea930d4a5025a7537f786902e}{\index{Currency\-Converter\-::\-Models\-::\-World\-Currencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}!Currencies@{Currencies}}
+\index{Currencies@{Currencies}!CurrencyConverter::Models::WorldCurrencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}}
+\subsubsection[{Currencies}]{\setlength{\rightskip}{0pt plus 5cm}I\-Enumerable$<${\bf Country\-Exchange\-Info}$>$ Currency\-Converter.\-Models.\-World\-Currencies.\-Currencies\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_currency_converter_1_1_models_1_1_world_currencies_a09b0138ea930d4a5025a7537f786902e}
+
+
+An enumerable list of all the currencies available to the application (which ultimately come from a S\-Q\-L Azure database table in earl.\-azurewebsites.\-net called Currency.\-dbo.\-tb\-Exchange\-Rates) 
+
+\hypertarget{class_currency_converter_1_1_models_1_1_world_currencies_ac31be6d2926cc18ee8eb3265ab1de0db}{\index{Currency\-Converter\-::\-Models\-::\-World\-Currencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}!Target\-Rates@{Target\-Rates}}
+\index{Target\-Rates@{Target\-Rates}!CurrencyConverter::Models::WorldCurrencies@{Currency\-Converter\-::\-Models\-::\-World\-Currencies}}
+\subsubsection[{Target\-Rates}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary$<$string, double$>$ Currency\-Converter.\-Models.\-World\-Currencies.\-Target\-Rates\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_currency_converter_1_1_models_1_1_world_currencies_ac31be6d2926cc18ee8eb3265ab1de0db}
+
+
+A list of exchange rates that have been converted from their base amount (vs. the U\-S Dollar) to the given base (if necessary). 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-A\-H\-C\-\_\-\-Web/\-Currency\-Converter/\-U\-I/\-Currency\-Converter/\-Models/Exchange\-Info.\-cs\end{DoxyCompactItemize}

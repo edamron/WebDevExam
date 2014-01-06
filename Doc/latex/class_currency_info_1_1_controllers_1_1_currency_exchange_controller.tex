@@ -1,0 +1,110 @@
+\hypertarget{class_currency_info_1_1_controllers_1_1_currency_exchange_controller}{\section{Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller Class Reference}
+\label{class_currency_info_1_1_controllers_1_1_currency_exchange_controller}\index{Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller@{Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller}}
+}
+
+
+The one and only controller for the Currency Exchange A\-P\-I. It includes definitions of all action methods, along with a constructor that instantiates the underlying model.  
+
+
+Inheritance diagram for Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_currency_info_1_1_controllers_1_1_currency_exchange_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_abdde30eb16f34e9b8efe3bd3707c345f}{Currency\-Exchange\-Controller} ()
+\begin{DoxyCompactList}\small\item\em The base class constructor, which connects to the database in M\-S Azure and reads the latest exchange rates from the Currency database. \end{DoxyCompactList}\item 
+I\-Enumerable$<$ \hyperlink{class_currency_info_1_1_models_1_1_currency}{Currency} $>$ \hyperlink{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_a6f81ee9304e4ebd3e14345dad597ca29}{Get\-Exchange\-Info} ()
+\begin{DoxyCompactList}\small\item\em Returns the entire list of available currencies, including all countries \& exchange rates, with all rates as compared to the U\-S dollar. \end{DoxyCompactList}\item 
+I\-Http\-Action\-Result \hyperlink{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_abce33a51737575f87fc5ebbe0b777676}{Get\-Exchange\-Info} (string Source)
+\begin{DoxyCompactList}\small\item\em Returns the currency information for a single currency, including the country code, country description \& currency, and the exchange rate, with the rate as compared to the U\-S dollar. \end{DoxyCompactList}\item 
+I\-Http\-Action\-Result \hyperlink{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_a984cea6f032bc6c7664e9058017a26e9}{Get\-Exchange\-Info} (string Source, string Target, double Amount)
+\begin{DoxyCompactList}\small\item\em Performs a currency conversion, and returns currency information for both the source and target currencies, along with the actual converted amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The one and only controller for the Currency Exchange A\-P\-I. It includes definitions of all action methods, along with a constructor that instantiates the underlying model. 
+
+As it stands as of this date, the A\-P\-I can be referenced at earl.\-azurewebsites.\-net (with the more specific U\-R\-I's provided in the documentation for each action method). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_abdde30eb16f34e9b8efe3bd3707c345f}{\index{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}!Currency\-Exchange\-Controller@{Currency\-Exchange\-Controller}}
+\index{Currency\-Exchange\-Controller@{Currency\-Exchange\-Controller}!CurrencyInfo::Controllers::CurrencyExchangeController@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}}
+\subsubsection[{Currency\-Exchange\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller.\-Currency\-Exchange\-Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_abdde30eb16f34e9b8efe3bd3707c345f}
+
+
+The base class constructor, which connects to the database in M\-S Azure and reads the latest exchange rates from the Currency database. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_a6f81ee9304e4ebd3e14345dad597ca29}{\index{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}!Get\-Exchange\-Info@{Get\-Exchange\-Info}}
+\index{Get\-Exchange\-Info@{Get\-Exchange\-Info}!CurrencyInfo::Controllers::CurrencyExchangeController@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}}
+\subsubsection[{Get\-Exchange\-Info}]{\setlength{\rightskip}{0pt plus 5cm}I\-Enumerable$<${\bf Currency}$>$ Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller.\-Get\-Exchange\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_a6f81ee9304e4ebd3e14345dad597ca29}
+
+
+Returns the entire list of available currencies, including all countries \& exchange rates, with all rates as compared to the U\-S dollar. 
+
+\begin{DoxyReturn}{Returns}
+An inumerable list of all Currency objects (Code, Description, Exchange\-Rate)
+\end{DoxyReturn}
+\href{http://earl.azurewebsites.net/api/currencyexchange}{\tt http\-://earl.\-azurewebsites.\-net/api/currencyexchange}\hypertarget{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_abce33a51737575f87fc5ebbe0b777676}{\index{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}!Get\-Exchange\-Info@{Get\-Exchange\-Info}}
+\index{Get\-Exchange\-Info@{Get\-Exchange\-Info}!CurrencyInfo::Controllers::CurrencyExchangeController@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}}
+\subsubsection[{Get\-Exchange\-Info}]{\setlength{\rightskip}{0pt plus 5cm}I\-Http\-Action\-Result Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller.\-Get\-Exchange\-Info (
+\begin{DoxyParamCaption}
+\item[{string}]{Source}
+\end{DoxyParamCaption}
+)}}\label{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_abce33a51737575f87fc5ebbe0b777676}
+
+
+Returns the currency information for a single currency, including the country code, country description \& currency, and the exchange rate, with the rate as compared to the U\-S dollar. 
+
+\begin{DoxyReturn}{Returns}
+A single Currency object (Code, Description, Exchange\-Rate)
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em Source} & The 3-\/character code of the desired currency\\
+\hline
+\end{DoxyParams}
+\href{http://earl.azurewebsites.net/api/currencyexchange?source=AUD}{\tt http\-://earl.\-azurewebsites.\-net/api/currencyexchange?source=\-A\-U\-D}\hypertarget{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_a984cea6f032bc6c7664e9058017a26e9}{\index{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}!Get\-Exchange\-Info@{Get\-Exchange\-Info}}
+\index{Get\-Exchange\-Info@{Get\-Exchange\-Info}!CurrencyInfo::Controllers::CurrencyExchangeController@{Currency\-Info\-::\-Controllers\-::\-Currency\-Exchange\-Controller}}
+\subsubsection[{Get\-Exchange\-Info}]{\setlength{\rightskip}{0pt plus 5cm}I\-Http\-Action\-Result Currency\-Info.\-Controllers.\-Currency\-Exchange\-Controller.\-Get\-Exchange\-Info (
+\begin{DoxyParamCaption}
+\item[{string}]{Source, }
+\item[{string}]{Target, }
+\item[{double}]{Amount}
+\end{DoxyParamCaption}
+)}}\label{class_currency_info_1_1_controllers_1_1_currency_exchange_controller_a984cea6f032bc6c7664e9058017a26e9}
+
+
+Performs a currency conversion, and returns currency information for both the source and target currencies, along with the actual converted amount. 
+
+\begin{DoxyReturn}{Returns}
+Source \& Target Currency objects (Code, Description, Exchange\-Rate), and the conversion amount
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em Source} & The 3-\/character code of the source currency\\
+\hline
+{\em Target} & The 3-\/character code of the target currency\\
+\hline
+{\em Amount} & The amount of source currecy to convert to the target\\
+\hline
+\end{DoxyParams}
+\href{http://earl.azurewebsites.net/api/currencyexchange?source=AUD&target=USD&amount=100}{\tt http\-://earl.\-azurewebsites.\-net/api/currencyexchange?source=\-A\-U\-D\&target=\-U\-S\-D\&amount=100}
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-A\-H\-C\-\_\-\-Web/\-Currency\-Converter/\-A\-P\-I/\-Currency\-Info/\-Currency\-Info/\-Controllers/Currency\-Exchange\-Controller.\-cs\end{DoxyCompactItemize}

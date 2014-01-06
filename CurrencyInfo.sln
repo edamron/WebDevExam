@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyInfo", "API\Currenc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter", "UI\CurrencyConverter\CurrencyConverter.csproj", "{05A9F583-C5E8-43BC-89C6-CD87FD82C97A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CF626C0-4446-40D1-9215-86A48DBABA6E}"
+	ProjectSection(SolutionItems) = preProject
+		CurrencyConverterHTMLDocs.zip = CurrencyConverterHTMLDocs.zip
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
