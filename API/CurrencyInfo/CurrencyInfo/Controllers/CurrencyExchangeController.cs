@@ -81,7 +81,7 @@ namespace CurrencyInfo.Controllers
         /// <param name="Destination">The 3-character code of the target currency</param>
         /// <param name="Amount">The amount of source currecy to convert to the target</param>
         /// <example>.../api/currencyexchange?source=GBP&destination=USD&amount=19</example>
-        public IHttpActionResult GetExchangeInfo(string Source, string Destination, double Amount) {
+        public IHttpActionResult GetExchangeInfo(string Source, string Target, double Amount) {
             Conversion conversion = new Conversion();
 
             conversion.Source = exchangeRates.FirstOrDefault((c) => c.Code == Source);
@@ -90,7 +90,7 @@ namespace CurrencyInfo.Controllers
                 return NotFound();
             }
 
-            conversion.Target = exchangeRates.FirstOrDefault((c) => c.Code == Destination);
+            conversion.Target = exchangeRates.FirstOrDefault((c) => c.Code == Target);
 
             if (conversion.Target == null) {
                 return NotFound();
