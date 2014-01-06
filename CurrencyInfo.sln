@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CF626C0-4446-40D1-9215-86A48DBABA6E}"
 	ProjectSection(SolutionItems) = preProject
 		CurrencyConverterHTMLDocs.zip = CurrencyConverterHTMLDocs.zip
+		API\SQL\dbo.tbCurrencies.sql = API\SQL\dbo.tbCurrencies.sql
+		API\SQL\dbo.tbExchangeRates.sql = API\SQL\dbo.tbExchangeRates.sql
+		API\SQL\dbo.vwExchangeRates.sql = API\SQL\dbo.vwExchangeRates.sql
 	EndProjectSection
 EndProject
 Global
