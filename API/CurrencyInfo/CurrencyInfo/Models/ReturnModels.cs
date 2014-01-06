@@ -10,7 +10,7 @@ namespace CurrencyInfo.Models {
         public double ExchangeRate { get; set; }
     }
 
-    public class Exchange {
+    public class Conversion {
         public Currency Source { get; set; }
         public Currency Target { get; set; }
         public double ConversionAmount { get; set; }
